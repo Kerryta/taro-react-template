@@ -9,7 +9,8 @@
     "css": "sass"
   },
   "scripts": {
-    "dev": "yarn build:weapp -- --watch",
+    "dev": " cross-env NODE_ENV=development yarn build:weapp -- --watch",
+    "prod": "cross-env NODE_ENV=production yarn build:weapp -- --watch",
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
     "build:alipay": "taro build --type alipay",
@@ -44,6 +45,7 @@
     "@tarojs/components": "3.6.8",
     "@tarojs/helper": "3.6.8",
     "@tarojs/plugin-framework-react": "3.6.8",
+    "@tarojs/plugin-http": "^3.6.8",
     "@tarojs/plugin-platform-alipay": "3.6.8",
     "@tarojs/plugin-platform-h5": "3.6.8",
     "@tarojs/plugin-platform-jd": "3.6.8",
@@ -55,7 +57,10 @@
     "@tarojs/runtime": "3.6.8",
     "@tarojs/shared": "3.6.8",
     "@tarojs/taro": "3.6.8",
+    "axios": "1.2.2",
+    "cross-env": "^7.0.3",
     "lodash": "4.17.15",
+    "prettier": "^2.8.8",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "taro-ui": "^3.1.0-beta.2"

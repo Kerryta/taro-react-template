@@ -1,8 +1,9 @@
 # taro-react-template
+
 Build the basic applet scaffolding.
 
+done：
 
-
-todo：
-
-1. import axios react-query
+- add cross-env
+- add prettier
+- support axios
