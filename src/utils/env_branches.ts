@@ -6,7 +6,9 @@ export const queryEnvironment = (): boolean => process.env.NODE_ENV === 'develop
 
 const manageEnvMap: EnvMapProps = {
 	base_url: () =>
-		queryEnvironment() ? 'https://gdhongkang.cn:40001/api/patient' : 'https://production-request-address:40001'
+		queryEnvironment()
+			? 'https://development-request-address:40001/api/patient'
+			: 'https://production-request-address:40001'
 }
 
 export const manageEnvBranches = (type: keyof EnvMapProps) => {
