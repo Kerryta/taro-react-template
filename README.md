@@ -7,3 +7,4 @@ done：
 - add cross-env
 - add prettier
 - support axios
+- encapsulation navigateTo
